@@ -1,0 +1,71 @@
+.policy-container {
+  padding: 20px;
+  font-family: 'Times New Roman', serif;
+  background-color: #fff;
+  color: #000;
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+ 
+}
+
+.back-btn {
+  background-color: transparent;
+  color: rgb(50, 91, 224);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.policy-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 80px;
+  height: auto;
+}
+
+.policy-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.policy-page {
+  margin-bottom: 40px;
+  page-break-after: always;
+   margin: 5%;
+}
+
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.policy-table th,
+.policy-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.policy-table th {
+  background-color: #f2f2f2;
+}
+
+.terms-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.sign-section {
+  margin-top: 30px;
+  text-align: right;
+}

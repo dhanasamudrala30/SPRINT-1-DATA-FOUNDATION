@@ -1,0 +1,80 @@
+.employee-directory-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.back-btn:hover {
+  color: #0056b3;
+}
+
+h1 {
+  color: #333;
+}
+
+.subheading {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.employee-directory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-directory-table th,
+.employee-directory-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.employee-directory-table th {
+  background-color: #4886f9;
+  color: white;
+}
+
+.employee-directory-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employee-directory-table tr:hover {
+  background-color: #e9f3ff;
+}
+
+/* Status colors */
+.status {
+  /* padding: 5px 10px; */
+  /* border-radius: 5px; */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  /* display: inline-block; */
+}
+
+.status.active {
+  background-color: #74e18e; /* light green */
+  color: #333;
+}
+
+.status.inactive {
+  background-color: #e85665; /* light red */
+  color: #333;
+}
+
+.status.yet-to-leave {
+  background-color: #f4d576; /* light yellow */
+  color: #333;
+}

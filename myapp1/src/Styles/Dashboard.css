@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbfd;
+}
+
+/* Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #0f1b33;
+  color: white;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Nav Menu */
+.nav-menu a {
+  display: block;
+  padding: 12px;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+  background-color: #1f2a44;
+  color: white;
+}
+
+/* Admin Section */
+.admin-section {
+  margin-top: auto;
+  position: relative;
+}
+
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-info:hover {
+  background-color: #1f2a44;
+}
+
+.admin-avatar {
+  font-size: 24px;
+  background: #2c3e50;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Dropup menu */
+.dropup-menu {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  z-index: 10;
+  width: 150px;
+}
+
+.dropup-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.dropup-menu li {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.dropup-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+/* Centered Image */
+.center-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f9fbfd;
+  padding: 20px;
+}
+
+.center-image img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.center-image h2 {
+  font-size: 24px;
+  color: #0f1b33;
+}
+
+/* Back button */
+.back-btn {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.back-btn:hover {
+  color: #0056b3;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-bar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f1b33;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-bar button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    transform: translateX(-100%);
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .center-image {
+    margin-top: 60px; /* space for menu bar */
+  }
+}
+
+

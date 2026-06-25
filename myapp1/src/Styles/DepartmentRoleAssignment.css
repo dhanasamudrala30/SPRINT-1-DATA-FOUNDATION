@@ -1,0 +1,55 @@
+.department-role-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.back-btn:hover {
+  color: #0056b3;
+}
+
+h1 {
+  color: #333;
+}
+
+.subheading {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.department-role-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.department-role-table th,
+.department-role-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.department-role-table th {
+  background-color: #4075ef;
+  color: white;
+}
+
+.department-role-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.department-role-table tr:hover {
+  background-color: #e9f3ff;
+}
