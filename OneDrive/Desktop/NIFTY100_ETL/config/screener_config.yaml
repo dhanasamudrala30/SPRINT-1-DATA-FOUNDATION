@@ -1,0 +1,7 @@
+filters:
+  roe_min: 15
+  debt_to_equity_max: 1
+  net_profit_margin_min: 10
+  interest_coverage_min: 3
+  asset_turnover_min: 0.5
+  free_cash_flow_min: 0
