@@ -1,0 +1,205 @@
+company_id,sector,sector,capital_allocation
+TCS,Unknown,Information Technology,Asset Light Compounder
+TCS,Unknown,Information Technology,Asset Light Compounder
+ABB,Unknown,Industrials,Deleveraging
+ABB,Unknown,Industrials,Deleveraging
+ABB,Unknown,Industrials,Deleveraging
+ABB,Unknown,Industrials,Deleveraging
+ADANIENSOL,Unknown,Energy,Reinvestor
+ADANIENSOL,Unknown,Energy,Reinvestor
+ADANIENT,Unknown,Industrials,Reinvestor
+ADANIENT,Unknown,Industrials,Reinvestor
+ADANIGREEN,Unknown,Energy,Reinvestor
+ADANIGREEN,Unknown,Energy,Reinvestor
+ADANIPORTS,Unknown,Industrials,Reinvestor
+ADANIPORTS,Unknown,Industrials,Reinvestor
+ADANIPORTS,Unknown,Industrials,Reinvestor
+ADANIPORTS,Unknown,Industrials,Reinvestor
+ADANIPOWER,Unknown,Energy,Cash Generator
+ADANIPOWER,Unknown,Energy,Cash Generator
+AMBUJACEM,Unknown,Materials,Reinvestor
+AMBUJACEM,Unknown,Materials,Reinvestor
+APOLLOHOSP,Unknown,Healthcare,Reinvestor
+APOLLOHOSP,Unknown,Healthcare,Reinvestor
+ASIANPAINT,Unknown,Materials,Balanced
+ASIANPAINT,Unknown,Materials,Balanced
+ASIANPAINT,Unknown,Materials,Balanced
+ASIANPAINT,Unknown,Materials,Balanced
+AGTL,Unknown,,Balanced
+AXISBANK,Unknown,Financials,Distress Signal
+BAJAJ-AUTO,Unknown,Consumer Discretionary,Asset Light Compounder
+BAJAJ-AUTO,Unknown,Consumer Discretionary,Asset Light Compounder
+BAJAJ-AUTO,Unknown,Consumer Discretionary,Asset Light Compounder
+BAJAJ-AUTO,Unknown,Consumer Discretionary,Asset Light Compounder
+BAJAJFINSV,Unknown,Financials,Distress Signal
+BAJAJFINSV,Unknown,Financials,Distress Signal
+BAJAJHLDNG,Unknown,Financials,Deleveraging
+BAJAJHLDNG,Unknown,Financials,Deleveraging
+BAJFINANCE,Unknown,Financials,Distress Signal
+BAJFINANCE,Unknown,Financials,Distress Signal
+BANKBARODA,Unknown,Financials,Distress Signal
+BEL,Unknown,Industrials,Reinvestor
+BEL,Unknown,Industrials,Reinvestor
+BHARTIARTL,Unknown,Communication Services,Reinvestor
+BHARTIARTL,Unknown,Communication Services,Reinvestor
+BHEL,Unknown,Industrials,Distress Signal
+BHEL,Unknown,Industrials,Distress Signal
+BOSCHLTD,Unknown,Consumer Discretionary,Deleveraging
+BOSCHLTD,Unknown,Consumer Discretionary,Deleveraging
+BPCL,Unknown,Energy,Cash Generator
+BPCL,Unknown,Energy,Cash Generator
+BRITANNIA,Unknown,Consumer Staples,Cash Generator
+BRITANNIA,Unknown,Consumer Staples,Cash Generator
+CANBK,Unknown,Financials,Cash Generator
+CHOLAFIN,Unknown,Financials,Distress Signal
+CHOLAFIN,Unknown,Financials,Distress Signal
+CIPLA,Unknown,Healthcare,Deleveraging
+CIPLA,Unknown,Healthcare,Deleveraging
+COALINDIA,Unknown,Materials,Cash Generator
+COALINDIA,Unknown,Materials,Cash Generator
+DABUR,Unknown,Consumer Staples,Cash Generator
+DABUR,Unknown,Consumer Staples,Cash Generator
+DIVISLAB,Unknown,Healthcare,Balanced
+DIVISLAB,Unknown,Healthcare,Balanced
+DLF,Unknown,Real Estate,Reinvestor
+DLF,Unknown,Real Estate,Reinvestor
+DMART,Unknown,Consumer Discretionary,Cash Generator
+DMART,Unknown,Consumer Discretionary,Cash Generator
+DRREDDY,Unknown,Healthcare,Reinvestor
+DRREDDY,Unknown,Healthcare,Reinvestor
+EICHERMOT,Unknown,Consumer Discretionary,Deleveraging
+EICHERMOT,Unknown,Consumer Discretionary,Deleveraging
+GAIL,Unknown,Energy,Deleveraging
+GAIL,Unknown,Energy,Deleveraging
+GODREJCP,Unknown,Consumer Staples,Reinvestor
+GODREJCP,Unknown,Consumer Staples,Reinvestor
+GRASIM,Unknown,Industrials,Distress Signal
+GRASIM,Unknown,Industrials,Distress Signal
+HAL,Unknown,Industrials,Reinvestor
+HAL,Unknown,Industrials,Reinvestor
+HAVELLS,Unknown,Industrials,Reinvestor
+HAVELLS,Unknown,Industrials,Reinvestor
+HCLTECH,Unknown,Information Technology,Cash Generator
+HCLTECH,Unknown,Information Technology,Cash Generator
+HDFCBANK,Unknown,Financials,Balanced
+HDFCLIFE,Unknown,Financials,Reinvestor
+HDFCLIFE,Unknown,Financials,Reinvestor
+HEROMOTOCO,Unknown,Consumer Discretionary,Deleveraging
+HEROMOTOCO,Unknown,Consumer Discretionary,Deleveraging
+HINDALCO,Unknown,Materials,Cash Generator
+HINDALCO,Unknown,Materials,Cash Generator
+HINDUNILVR,Unknown,Consumer Staples,Reinvestor
+HINDUNILVR,Unknown,Consumer Staples,Reinvestor
+ICICIBANK,Unknown,Financials,Reinvestor
+ICICIGI,Unknown,Financials,Deleveraging
+ICICIGI,Unknown,Financials,Deleveraging
+ICICIPRULI,Unknown,Financials,Deleveraging
+ICICIPRULI,Unknown,Financials,Deleveraging
+INDIGO,Unknown,Consumer Discretionary,Reinvestor
+INDIGO,Unknown,Consumer Discretionary,Reinvestor
+INDUSINDBK,Unknown,Financials,Cash Generator
+INFY,Unknown,Information Technology,Cash Generator
+INFY,Unknown,Information Technology,Cash Generator
+IOC,Unknown,Energy,Cash Generator
+IOC,Unknown,Energy,Cash Generator
+IRCTC,Unknown,Consumer Discretionary,Deleveraging
+IRCTC,Unknown,Consumer Discretionary,Deleveraging
+IRFC,Unknown,Financials,Deleveraging
+IRFC,Unknown,Financials,Deleveraging
+ITC,Unknown,Consumer Staples,Asset Light Compounder
+ITC,Unknown,Consumer Staples,Asset Light Compounder
+JINDALSTEL,Unknown,Materials,Reinvestor
+JINDALSTEL,Unknown,Materials,Reinvestor
+JIOFIN,Unknown,Financials,Reinvestor
+JIOFIN,Unknown,Financials,Reinvestor
+JSWENERGY,Unknown,Energy,Reinvestor
+JSWENERGY,Unknown,Energy,Reinvestor
+JSWSTEEL,Unknown,Materials,Reinvestor
+JSWSTEEL,Unknown,Materials,Reinvestor
+KOTAKBANK,Unknown,Financials,Reinvestor
+LICI,Unknown,Financials,Cash Generator
+LICI,Unknown,Financials,Cash Generator
+LODHA,Unknown,Real Estate,Reinvestor
+LODHA,Unknown,Real Estate,Reinvestor
+LT,Unknown,Industrials,Cash Generator
+LT,Unknown,Industrials,Cash Generator
+LTIM,Unknown,Information Technology,Reinvestor
+LTIM,Unknown,Information Technology,Reinvestor
+M&M,Unknown,Consumer Discretionary,Distress Signal
+M&M,Unknown,Consumer Discretionary,Distress Signal
+MARUTI,Unknown,Consumer Discretionary,Reinvestor
+MARUTI,Unknown,Consumer Discretionary,Reinvestor
+MOTHERSON,Unknown,Consumer Discretionary,Cash Generator
+MOTHERSON,Unknown,Consumer Discretionary,Cash Generator
+NAUKRI,Unknown,Communication Services,Reinvestor
+NAUKRI,Unknown,Communication Services,Reinvestor
+NESTLEIND,Unknown,Consumer Staples,Cash Generator
+NESTLEIND,Unknown,Consumer Staples,Cash Generator
+NHPC,Unknown,Energy,Reinvestor
+NHPC,Unknown,Energy,Reinvestor
+NTPC,Unknown,Energy,Reinvestor
+NTPC,Unknown,Energy,Reinvestor
+ONGC,Unknown,Energy,Reinvestor
+ONGC,Unknown,Energy,Reinvestor
+PFC,Unknown,Financials,Distress Signal
+PFC,Unknown,Financials,Distress Signal
+PIDILITIND,Unknown,Materials,Deleveraging
+PIDILITIND,Unknown,Materials,Deleveraging
+PNB,Unknown,Financials,Distress Signal
+PNB,Unknown,Financials,Distress Signal
+PNB,Unknown,Financials,Distress Signal
+PNB,Unknown,Financials,Distress Signal
+PNB,Unknown,Financials,Distress Signal
+POWERGRID,Unknown,Energy,Deleveraging
+POWERGRID,Unknown,Energy,Deleveraging
+POWERGRID,Unknown,Energy,Deleveraging
+POWERGRID,Unknown,Energy,Deleveraging
+RECLTD,Unknown,Financials,Distress Signal
+RECLTD,Unknown,Financials,Distress Signal
+RELIANCE,Unknown,Energy,Deleveraging
+RELIANCE,Unknown,Energy,Deleveraging
+SBILIFE,Unknown,Financials,Reinvestor
+SBILIFE,Unknown,Financials,Reinvestor
+SBIN,Unknown,Financials,Cash Generator
+SHREECEM,Unknown,Materials,Cash Generator
+SHREECEM,Unknown,Materials,Cash Generator
+SHRIRAMFIN,Unknown,Financials,Distress Signal
+SHRIRAMFIN,Unknown,Financials,Distress Signal
+SIEMENS,Unknown,Industrials,Asset Light Compounder
+SUNPHARMA,Unknown,Healthcare,Deleveraging
+SUNPHARMA,Unknown,Healthcare,Deleveraging
+TATACONSUM,Unknown,Consumer Staples,Reinvestor
+TATACONSUM,Unknown,Consumer Staples,Reinvestor
+TATAMOTORS,Unknown,Consumer Discretionary,Deleveraging
+TATAMOTORS,Unknown,Consumer Discretionary,Deleveraging
+TATAPOWER,Unknown,Energy,Reinvestor
+TATAPOWER,Unknown,Energy,Reinvestor
+TATASTEEL,Unknown,Materials,Cash Generator
+TATASTEEL,Unknown,Materials,Cash Generator
+TCS,Unknown,Information Technology,Asset Light Compounder
+TCS,Unknown,Information Technology,Asset Light Compounder
+TECHM,Unknown,Information Technology,Deleveraging
+TECHM,Unknown,Information Technology,Deleveraging
+TECHM,Unknown,Information Technology,Deleveraging
+TECHM,Unknown,Information Technology,Deleveraging
+TITAN,Unknown,Consumer Discretionary,Cash Generator
+TITAN,Unknown,Consumer Discretionary,Cash Generator
+TORNTPHARM,Unknown,Healthcare,Deleveraging
+TORNTPHARM,Unknown,Healthcare,Deleveraging
+TRENT,Unknown,Consumer Discretionary,Balanced
+TRENT,Unknown,Consumer Discretionary,Balanced
+TVSMOTOR,Unknown,Consumer Discretionary,Distress Signal
+TVSMOTOR,Unknown,Consumer Discretionary,Distress Signal
+ULTRACEMCO,Unknown,,Reinvestor
+ULTRACEMCO,Unknown,,Reinvestor
+UNIONBANK,Unknown,,Cash Generator
+UNITDSPR,Unknown,,Cash Generator
+UNITDSPR,Unknown,,Cash Generator
+VEDL,Unknown,,Deleveraging
+VEDL,Unknown,,Deleveraging
+WIPRO,Unknown,,Cash Generator
+WIPRO,Unknown,,Cash Generator
+ZOMATO,Unknown,,Cash Generator
+ZOMATO,Unknown,,Cash Generator
+ZYDUSLIFE,Unknown,,Deleveraging
+ZYDUSLIFE,Unknown,,Deleveraging
