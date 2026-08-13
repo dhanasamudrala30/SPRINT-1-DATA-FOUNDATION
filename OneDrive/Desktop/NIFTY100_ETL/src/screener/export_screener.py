@@ -32,6 +32,7 @@ df = (
 # --------------------------
 
 def normalize(series):
+    """Normalize a pandas Series for comparison or visualization."""
     minimum = series.min()
     maximum = series.max()
 

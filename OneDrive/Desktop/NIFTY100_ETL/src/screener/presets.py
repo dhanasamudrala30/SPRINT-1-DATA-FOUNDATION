@@ -30,6 +30,7 @@ df = (
 # -----------------------
 
 def quality_compounder(data):
+    """Apply the quality compounder screening preset."""
     return data[
         (data["return_on_equity_pct"] > 15) &
         (data["debt_to_equity"] < 1) &
@@ -38,6 +39,7 @@ def quality_compounder(data):
 
 
 def value_pick(data):
+    """Apply the value-pick screening preset."""
     return data[
         (data["debt_to_equity"] < 2) &
         (data["net_profit_margin_pct"] > 10)
@@ -45,6 +47,7 @@ def value_pick(data):
 
 
 def growth_accelerator(data):
+    """Apply the growth-accelerator screening preset."""
     return data[
         (data["return_on_equity_pct"] > 20) &
         (data["asset_turnover"] > 1)
@@ -52,6 +55,7 @@ def growth_accelerator(data):
 
 
 def dividend_champion(data):
+    """Apply the dividend-champion screening preset."""
     return data[
         (data["dividend_payout_ratio_pct"] > 20) &
         (data["dividend_payout_ratio_pct"] < 80) &
@@ -60,6 +64,7 @@ def dividend_champion(data):
 
 
 def debt_free_bluechip(data):
+    """Apply the debt-free blue-chip screening preset."""
     return data[
         (data["total_debt_cr"] == 0) &
         (data["return_on_equity_pct"] > 12)
@@ -67,6 +72,7 @@ def debt_free_bluechip(data):
 
 
 def turnaround_watch(data):
+    """Apply the turnaround-watch screening preset."""
     return data[
         (data["free_cash_flow_cr"] > 0) &
         (data["net_profit_margin_pct"] > 5)

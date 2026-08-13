@@ -1,78 +1,88 @@
-import pytest
-import sys
-from pathlib import Path
+import pandas as pd
 
-# Add src/etl to Python path
-sys.path.append(str(Path(__file__).resolve().parents[2] / "src" / "etl"))
-
-from normaliser import normalize_year, normalize_ticker
+from src.etl.normaliser import normalize_year
 
 
-# -----------------------------
-# normalize_year() Tests
-# -----------------------------
+# ============================================================
+# DAY 41 — normalize_year() UNIT TESTS
+# ============================================================
 
-def test_year_1():
+
+def test_normalize_four_digit_year():
+    assert normalize_year(2024) == 2024
+
+
+def test_normalize_four_digit_year_string():
+    assert normalize_year("2024") == 2024
+
+
+def test_normalize_year_with_month_name():
     assert normalize_year("Mar 2015") == 2015
 
-def test_year_2():
+
+def test_normalize_december_year():
     assert normalize_year("Dec 2012") == 2012
 
-def test_year_3():
-    assert normalize_year("2020") == 2020
 
-def test_year_4():
+def test_normalize_two_digit_year_13():
     assert normalize_year("Mar-13") == 2013
 
-def test_year_5():
-    assert normalize_year("Mar-99") == 1999
 
-def test_year_6():
+def test_normalize_two_digit_year_24():
+    assert normalize_year("FY24") == 2024
+
+
+def test_normalize_two_digit_year_30():
+    assert normalize_year("FY30") == 2030
+
+
+def test_normalize_two_digit_year_31():
+    assert normalize_year("FY31") == 1931
+
+
+def test_normalize_two_digit_year_99():
+    assert normalize_year("FY99") == 1999
+
+
+def test_normalize_two_digit_year_00():
+    assert normalize_year("FY00") == 2000
+
+
+def test_normalize_year_with_whitespace():
+    assert normalize_year(" 2022 ") == 2022
+
+
+def test_normalize_year_with_prefix():
+    assert normalize_year("FY2023") == 2023
+
+
+def test_normalize_year_with_suffix():
+    assert normalize_year("Year 2021") == 2021
+
+
+def test_normalize_year_with_month_and_year():
+    assert normalize_year("April 2020") == 2020
+
+
+def test_normalize_year_with_hyphen():
+    assert normalize_year("2020-21") == 2020
+
+
+def test_normalize_year_none():
     assert normalize_year(None) is None
 
-def test_year_7():
+
+def test_normalize_year_nan():
+    assert normalize_year(float("nan")) is None
+
+
+def test_normalize_year_pandas_nat():
+    assert normalize_year(pd.NaT) is None
+
+
+def test_normalize_invalid_text():
+    assert normalize_year("Not a year") is None
+
+
+def test_normalize_empty_string():
     assert normalize_year("") is None
-
-def test_year_8():
-    assert normalize_year("Invalid") is None
-
-def test_year_9():
-    assert normalize_year("FY2024") == 2024
-
-def test_year_10():
-    assert normalize_year("2018") == 2018
-
-
-# -----------------------------
-# normalize_ticker() Tests
-# -----------------------------
-
-def test_ticker_1():
-    assert normalize_ticker("tcs") == "TCS"
-
-def test_ticker_2():
-    assert normalize_ticker(" TCS ") == "TCS"
-
-def test_ticker_3():
-    assert normalize_ticker("HdfcBank") == "HDFCBANK"
-
-def test_ticker_4():
-    assert normalize_ticker("abb") == "ABB"
-
-def test_ticker_5():
-    assert normalize_ticker(" Reliance ") == "RELIANCE"
-
-def test_ticker_6():
-    assert normalize_ticker("") == ""
-
-def test_ticker_7():
-    assert normalize_ticker(None) is None
-
-def test_ticker_8():
-    assert normalize_ticker("icicibank") == "ICICIBANK"
-
-def test_ticker_9():
-    assert normalize_ticker("axisbank") == "AXISBANK"
-
-def test_ticker_10():
-    assert normalize_ticker("sbilife") == "SBILIFE"

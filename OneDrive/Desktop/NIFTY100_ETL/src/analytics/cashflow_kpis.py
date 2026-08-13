@@ -1,4 +1,5 @@
 def operating_cashflow_ratio(operating_activity, net_cash_flow):
+    """Calculate operating cash flow relative to total cash flow."""
     if net_cash_flow == 0:
         return None
     return round(operating_activity / net_cash_flow, 2)
@@ -6,6 +7,7 @@ def operating_cashflow_ratio(operating_activity, net_cash_flow):
 
 
 def investment_ratio(investing_activity, operating_activity):
+    """Calculate investing activity relative to total cash flow."""
     if operating_activity == 0:
         return None
     return round(abs(investing_activity) / operating_activity, 2)
@@ -13,12 +15,14 @@ def investment_ratio(investing_activity, operating_activity):
 
 
 def financing_ratio(financing_activity, operating_activity):
+    """Calculate financing activity relative to total cash flow."""
     if operating_activity == 0:
         return None
     return round(abs(financing_activity) / operating_activity, 2)
 
 
 def net_cashflow_margin(net_cash_flow, operating_activity):
+    """Calculate net cash flow as a percentage of operating cash flow."""
     if operating_activity == 0:
         return None
     return round((net_cash_flow / operating_activity) * 100, 2)
@@ -26,6 +30,7 @@ def net_cashflow_margin(net_cash_flow, operating_activity):
 
 
 def is_positive_cashflow(net_cash_flow):
+    """Check whether net cash flow is positive."""
     return net_cash_flow > 0
 
 
@@ -170,6 +175,7 @@ df["capex_intensity_pct"] = (
 
 def capex_label(value):
 
+    """Return a descriptive label for capital expenditure."""
     if pd.isna(value):
         return "Unknown"
 
@@ -297,6 +303,7 @@ df = df.merge(
 
 def capital_label(row):
 
+    """Return a descriptive capital allocation label for a company."""
     if row["distress_flag"]:
         return "Financially Stressed"
 

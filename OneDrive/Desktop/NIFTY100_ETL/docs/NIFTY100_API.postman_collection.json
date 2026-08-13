@@ -1,0 +1,134 @@
+{
+  "info": {
+    "name": "NIFTY100 ETL API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "/",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/"
+      }
+    },
+    {
+      "name": "/api/v1/companies/",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/pl",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/pl"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/bs",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/bs"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/cashflow",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/cashflow"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/ratios",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/ratios"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/tearsheet",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/tearsheet"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/peers/compare",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/peers/compare"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/documents",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/companies/{ticker}/documents"
+      }
+    },
+    {
+      "name": "/api/v1/screener/",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/screener/"
+      }
+    },
+    {
+      "name": "/api/v1/sectors/",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/sectors/"
+      }
+    },
+    {
+      "name": "/api/v1/sectors/{sector}/companies",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/sectors/{sector}/companies"
+      }
+    },
+    {
+      "name": "/api/v1/peers/{group_name}",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/peers/{group_name}"
+      }
+    },
+    {
+      "name": "/api/v1/valuation/{ticker}",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/valuation/{ticker}"
+      }
+    },
+    {
+      "name": "/api/v1/portfolio/stats",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/portfolio/stats"
+      }
+    },
+    {
+      "name": "/api/v1/documents/",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/documents/"
+      }
+    },
+    {
+      "name": "/api/v1/health",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8000/api/v1/health"
+      }
+    }
+  ]
+}

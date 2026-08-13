@@ -205,15 +205,17 @@
 #     print(f"\n{name.upper()}")
 #     print(df.columns.tolist())
 
-import pandas as pd
+# import pandas as pd
 
-df = pd.read_csv("data/processed/sectors.csv")
+# df = pd.read_csv("data/processed/sectors.csv")
 
-print("Unique sectors:")
-print(df["broad_sector"].dropna().unique())
+# print("Unique sectors:")
+# print(df["broad_sector"].dropna().unique())
 
-print("\nSector counts:")
-print(df["broad_sector"].value_counts())
+# print("\nSector counts:")
+# print(df["broad_sector"].value_counts())
 
-print("\nNumber of sectors:")
-print(df["broad_sector"].nunique())
+# print("\nNumber of sectors:")
+# print(df["broad_sector"].nunique())
+
+

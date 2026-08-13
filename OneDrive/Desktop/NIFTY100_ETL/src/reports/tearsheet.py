@@ -83,6 +83,7 @@ capital_allocation = pd.read_csv(CAPITAL_FILE)
 # ============================================================
 
 def clean_numeric(df, columns):
+    """Clean specified DataFrame columns as numeric values."""
     for column in columns:
         if column in df.columns:
             df[column] = pd.to_numeric(
@@ -187,6 +188,7 @@ def dataframe_to_image(fig):
 
 
 def latest_ratio(company_id):
+    """Retrieve the latest financial ratios for a company."""
     data = ratios[
         ratios["company_id"] == company_id
     ].sort_values("year")
@@ -198,6 +200,7 @@ def latest_ratio(company_id):
 
 
 def company_metrics(company_id):
+    """Retrieve calculated financial metrics for a company."""
     data = metrics[
         metrics["company_id"] == company_id
     ]
@@ -209,6 +212,7 @@ def company_metrics(company_id):
 
 
 def company_info(company_id):
+    """Retrieve basic company information."""
     data = companies[
         companies["id"] == company_id
     ]
@@ -220,6 +224,7 @@ def company_info(company_id):
 
 
 def company_sector(company_id):
+    """Retrieve sector information for a company."""
     data = sectors[
         sectors["company_id"] == company_id
     ]
@@ -231,6 +236,7 @@ def company_sector(company_id):
 
 
 def company_capital_pattern(company_id):
+    """Retrieve capital allocation pattern information."""
     data = capital_allocation[
         capital_allocation["company_id"] == company_id
     ]
@@ -247,6 +253,7 @@ def company_capital_pattern(company_id):
 
 def draw_header_footer(canvas, doc):
 
+    """Draw the report header and footer."""
     canvas.saveState()
 
     width, height = A4
@@ -287,6 +294,7 @@ def draw_header_footer(canvas, doc):
 
 def revenue_profit_chart(company_id):
 
+    """Generate a revenue and profit chart for a company."""
     data = profit_loss[
     (profit_loss["company_id"] == company_id) &
     (profit_loss["year"].notna())
@@ -342,6 +350,7 @@ def revenue_profit_chart(company_id):
 
 def roe_roce_chart(company_id):
 
+    """Generate an ROE and ROCE chart for a company."""
     data = ratios[
     (ratios["company_id"] == company_id) &
     (ratios["year"].notna())
@@ -407,6 +416,7 @@ def roe_roce_chart(company_id):
 
 def balance_sheet_chart(company_id):
 
+    """Generate a balance sheet chart for a company."""
     data = balance_sheet[
     (balance_sheet["company_id"] == company_id) &
     (balance_sheet["year"].notna())
@@ -477,6 +487,7 @@ def balance_sheet_chart(company_id):
 
 def cashflow_chart(company_id):
 
+    """Generate a cash flow chart for a company."""
     data = cashflow[
         (cashflow["company_id"] == company_id) &
         (cashflow["year"].notna())
@@ -538,6 +549,7 @@ def cashflow_chart(company_id):
 
 def create_kpi_table(company_id):
 
+    """Create a KPI summary table for a company."""
     ratio = latest_ratio(company_id)
     metric = company_metrics(company_id)
 
@@ -663,6 +675,7 @@ def create_kpi_table(company_id):
 
 def pros_cons_table(company_id):
 
+    """Create a pros-and-cons table for a company."""
     data = pros_cons[
         pros_cons["company_id"] == company_id
     ]
@@ -845,6 +858,7 @@ def pros_cons_table(company_id):
 
 def capital_badge(company_id):
 
+    """Create a capital allocation badge for a company."""
     pattern = company_capital_pattern(company_id)
 
     badge = Table(
@@ -921,6 +935,7 @@ def capital_badge(company_id):
 
 def generate_tearsheet(company_id):
 
+    """Generate a PDF financial tearsheet for a company."""
     info = company_info(company_id)
 
     if info is None:

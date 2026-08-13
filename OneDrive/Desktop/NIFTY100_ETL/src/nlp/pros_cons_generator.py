@@ -49,6 +49,7 @@ pros_cons = []
 
 def add_record(company, rule_type, rule_id, text, confidence):
 
+    """Add a pros-and-cons analysis record."""
     if confidence >= 60:
 
         pros_cons.append({

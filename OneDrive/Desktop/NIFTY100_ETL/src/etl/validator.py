@@ -33,6 +33,7 @@ validation_failures = []
 
 def log_failure(rule, severity, table, company_id, year, field, issue):
 
+    """Record a data-quality validation failure."""
     validation_failures.append({
         "rule": rule,
         "severity": severity,

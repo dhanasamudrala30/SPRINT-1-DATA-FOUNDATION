@@ -52,6 +52,7 @@ cashflow.rename(
 
 def classify(row):
 
+    """Classify a company based on capital allocation characteristics."""
     if row["distress_flag"]:
         return "Distress Signal"
 

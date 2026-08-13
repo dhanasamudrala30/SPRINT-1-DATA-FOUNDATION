@@ -272,6 +272,7 @@ company_style = ParagraphStyle(
 
 def safe_number(value):
 
+    """Convert a value to a safe numeric representation."""
     if pd.isna(value):
         return None
 
@@ -284,6 +285,7 @@ def safe_number(value):
 
 def fmt(value, decimals=2):
 
+    """Format a numeric value for report output."""
     number = safe_number(value)
 
     if number is None:
@@ -294,6 +296,7 @@ def fmt(value, decimals=2):
 
 def pcell(value, bold=False):
 
+    """Create a formatted report table cell."""
     text = str(value)
 
     if bold:
@@ -315,6 +318,7 @@ def generate_sector_report(
     sector_df
 ):
 
+    """Generate a PDF report for sector analysis."""
     safe_name = (
         str(sector_name)
         .strip()

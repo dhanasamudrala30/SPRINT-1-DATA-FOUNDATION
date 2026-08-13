@@ -60,6 +60,7 @@ valuation["valuation_score"] = (
 # ----------------------------------------------------
 def valuation_flag(row):
 
+    """Classify a company's valuation based on valuation metrics."""
     if (
         row["valuation_score"] >= 20
         and row["fcf_yield_pct"] >= 15

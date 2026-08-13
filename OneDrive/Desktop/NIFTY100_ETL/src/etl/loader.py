@@ -1,6 +1,9 @@
 from pathlib import Path
 import pandas as pd
-from normaliser import normalize_year, normalize_ticker
+try:
+    from .normaliser import normalize_year, normalize_ticker
+except ImportError:
+    from normaliser import normalize_year, normalize_ticker
 
 
 RAW_PATH = Path("data/raw")
